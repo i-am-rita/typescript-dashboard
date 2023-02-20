@@ -66,12 +66,12 @@
       height: 20px;
       width: 20px;
       border-radius: 5px;
-      border: 1px solid blue;
+      //   border: 1px solid blue;
       cursor: pointer;
       margin: 5px;
 
       &:nth-child(1) {
-        background-color: red;
+        background-color: #e0bbbb;
       }
 
       &:nth-child(2) {
