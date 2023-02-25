@@ -1,14 +1,29 @@
-.home{
-    background-color: rgb(217, 217, 238);
-    display: flex;
+.home {
+  background-color: rgb(217, 217, 238);
+  display: flex;
 
-    .home-container{
-        flex: 11; 
+  .home-container {
+    flex: 11;
 
-        .widget-container{
-            display: flex;
-            padding: 20px;
-            gap: 20px;
-        }
+    .widget-container {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
     }
+
+    .list-container {
+      box-shadow: 0px 1px 13px 2px rgba(222, 164, 164, 0.71);
+      -webkit-box-shadow: 0px 1px 13px 2px rgba(222, 164, 164, 0.71);
+      -moz-box-shadow: 0px 1px 13px 2px rgba(222, 164, 164, 0.71);
+
+      padding: 20px;
+      margin: 20px;
+
+      .list-title{
+        font-weight: 500;
+        color: gray;
+        margin-bottom: 15px;
+      }
+    }
+  }
 }

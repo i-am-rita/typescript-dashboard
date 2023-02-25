@@ -4,12 +4,15 @@ import './Widget.scss'
 
 interface Props {
     type: string
+    // title: string
+    // isMoney: boolean
 }
 
 const amount = 90;
 const diff = 15;
 
 export function Widget({ type }: Props) {
+
     let data;
     switch (type) {
         case "user":
@@ -50,7 +53,7 @@ export function Widget({ type }: Props) {
         <div className='widget'>
             <div className="left">
                 <span className='title'>{data?.title}</span>
-                <span className='counter'>     {data?.isMoney && "$"} {amount}</span>
+                <span className='counter'>{data?.isMoney && "$"} {amount}</span>
                 <span className='link'>{data?.link}</span>
             </div>
             <div className="right">
