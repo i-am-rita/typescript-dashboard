@@ -10,8 +10,6 @@ interface Props {
     // title: string
     // isMoney: boolean
     // link: string
-
-
 }
 
 export function Home({ name }: Props) {

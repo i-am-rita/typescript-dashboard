@@ -74,11 +74,12 @@ export function CellTable(props: Cell) {
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead>
                         <TableRow>
-                            <TableCell>Dessert (100g serving)</TableCell>
-                            <TableCell align="right">Calories</TableCell>
-                            <TableCell align="right">Fat&nbsp;(g)</TableCell>
-                            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-                            <TableCell align="right">Protein&nbsp;(g)</TableCell>
+                            <TableCell>Items</TableCell>
+                            <TableCell align="right">Cost</TableCell>
+                            <TableCell align="right">Customer</TableCell>
+                            <TableCell align="right">Price</TableCell>
+                            <TableCell align="right">Delivery</TableCell>
+                            <TableCell align="right">Date</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -90,6 +91,7 @@ export function CellTable(props: Cell) {
                                 <TableCell component="th" scope="row">
                                     {item.product}
                                 </TableCell>
+                                <TableCell align="right">{item.amount}</TableCell>
                                 <TableCell align="right">{item.customer}</TableCell>
                                 <TableCell align="right">{item.amount}</TableCell>
                                 <TableCell align="right">{item.method}</TableCell>
